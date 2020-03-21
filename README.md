@@ -128,3 +128,6 @@ git push origin <ime-grane>
 Otici na link na Github-u i otvoriti novi **Pull request**.
 
 Iiii to bi bilo to... :relieved:
+
+Za kraj, jedan cheat sheet
+![cheatsheet](images/cheatsheet.jpg)
