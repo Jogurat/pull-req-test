@@ -80,7 +80,14 @@ I to je to, vlasnik repozitorijuma ce onda prihvatiti ili odbiti taj pull reques
 
 ### Bitna napomena
 
-U trenutku dok vi radite na "svom delu" koda, igrom slucaja mozda je neko pre vas izmenio isti taj deo, te moze doci do konflikta. Tako da je "pravilo" da pre _push_-ovanja svojih izmena jako bitno da se prvo sve izmene _pull_-uju kod sebe u lokal, rese bilo kakvi konflikti, i ponovo uradi push i tek onda da se napravi pull request.
+U trenutku dok vi radite na "svom delu" koda, igrom slucaja mozda je neko pre vas izmenio isti taj deo, te moze doci do konflikta. Tako da je "pravilo" da pre _push_-ovanja svojih izmena jako bitno da se prvo sve izmene _pull_-uju kod sebe u lokal, rese bilo kakvi konflikti. Nakon sto se rese konflikti, moramo opet uraditi:
+
+```bash
+git add .
+git commit -m "Poruka razresnja kolizije"
+```
+
+i ponovo uradi push i tek onda da se napravi pull request.
 
 ### Da sumiramo
 
