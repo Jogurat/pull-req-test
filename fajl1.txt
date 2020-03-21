@@ -4,4 +4,8 @@ matina linijaaaaa
 
 ae sjebacemo sad sve
 
+<<<<<<< HEAD
 ja sam ukica i radim na svojoj grani tralalal
+=======
+brzi programer je uradio promenu na fajlu1
+>>>>>>> 1d730a90b59b13ba19887b8621634a55fbdda385
