@@ -6,3 +6,5 @@ promenio sam fajl 3 u master grani
 
 
 ja sad na ukicinoj grani isto radim u fajlu 3 ali cu da pullujem promene pre pushovanja.
+
+master radi na fajlu 3 --- dobar workflow
