@@ -1,7 +1,4 @@
 Ovo je Perin fajl :)
-<<<<<<< HEAD
 
 e ocu i ja da promenim perin fajl
-=======
 E vise nije perin fajl!
->>>>>>> 98447c0c8bff3aa5db2a5832f247e1da5e1d146c
