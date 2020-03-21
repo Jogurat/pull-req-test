@@ -74,3 +74,50 @@ git push origin perinaGrana
 ```
 
 Ovime smo napravili novu granu na remote repo-u. Sada bi trebalo da napravimo novi **pull request**.
+![pull1](images/pull1.png)
+
+I to je to, vlasnik repozitorijuma ce onda prihvatiti ili odbiti taj pull request i vase izmene ce biti vidljive na master grani (ako su prihvacene naravno).
+
+### Bitna napomena
+
+U trenutku dok vi radite na "svom delu" koda, igrom slucaja mozda je neko pre vas izmenio isti taj deo, te moze doci do konflikta. Tako da je "pravilo" da pre _push_-ovanja svojih izmena jako bitno da se prvo sve izmene _pull_-uju kod sebe u lokal, rese bilo kakvi konflikti, i ponovo uradi push i tek onda da se napravi pull request.
+
+### Da sumiramo
+
+Pre bilo kakvih izmena, npr. na pocetku "radnog dana" izvrsimo komandu:
+
+```bash
+git pull origin master
+```
+
+Ovime smo azurni trenutnoj verziji koda. (**Ovde je pretpostavka da je sve sto ste prethodnog dana radili vec na master grani!**)
+
+Odradili ste posao za odredjeni feature ili bug-fix. Komande:
+
+```bash
+git add .
+git commit -m "Razresio bug1"
+```
+
+Ovo odradite za svaki feature ili bug ponaosob. Ideja je da komitovi budu sto manji (razdeljeni na logicke celine poput feature-a ili bug-fixeva). Dalje, **opet** dovlacimo kod sebe u lokalnu granu, remote master, istom komandom kao "sa pocetka dana", tj.
+
+```bash
+git pull origin master
+```
+
+Ako je doslo do konflikata, razresimo ih kod sebe u lokalu (VS Code lepo pokaze gde je doslo do konflikta, i kako se razresava). Potrebno je opet odraditi:
+
+```bash
+git add .
+git commit -m "Razresio konflikt"
+```
+
+**TEK SMO SAD SPREMNI DA POSALJEMO IZMENE NA REMOTE!**
+
+```bash
+git push origin <ime-grane>
+```
+
+Otici na link na Github-u i otvoriti novi **Pull request**.
+
+Iiii to bi bilo to... :relieved:
